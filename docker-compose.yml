@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: injective-api
+    ports:
+      - "8000:8000"
+    environment:
+      - NETWORK=testnet
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - CACHE_TTL_SECONDS=60
+    volumes:
+      - .:/app
+    restart: unless-stopped
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+networks:
+  default:
+    name: injective-network
