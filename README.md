@@ -386,7 +386,6 @@ MIT License - feel free to use this in your own projects.
 
 For questions about this API or the Ninja API Forge hackathon:
 - Twitter: [@injective](https://twitter.com/injective) [@NinjaLabsHQ](https://twitter.com/NinjaLabsHQ)
-- GitHub: [Your GitHub Handle]
 
 ---
 
